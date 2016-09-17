@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    ".vscode/": false,
+    ".eslint*": false,
+    "typings": false,
+    "typings.json": false,
+    ".gitignore": false,
+    ".stylelintrc": false,
+    "jsconfig.json": false,
+    "README.md": false,
+    "Exc": false
+  }
+}
