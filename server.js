@@ -5,8 +5,9 @@
 // Requires
 
 // Externals
-const express = require( "express" )
-const path    = require( "path" )
+const ejsLayouts = require( "express-ejs-layouts" )
+const express    = require( "express" )
+const path       = require( "path" )
 
 // Constants
 const port = process.env.PORT || 3000
@@ -18,6 +19,13 @@ const port = process.env.PORT || 3000
 // App setup
 
 const app = express()
+
+// Serve static content: css, js
+app.use( express.static( path.join( __dirname, "/public" ) ) )
+
+// Use EJS with layouts
+app.set( "view engine", "ejs" )
+app.use( ejsLayouts )
 
 
 

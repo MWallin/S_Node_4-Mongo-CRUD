@@ -1,9 +1,10 @@
 {
   "files.exclude": {
-    // Basic scaffolding files
+    // Basic editor and linter files
     ".vscode/": true,
     ".eslint*": true,
     ".gitignore": true,
+    ".htmlhintrc": true,
     ".stylelintrc": true,
     "typings": true,
     "typings.json": true,

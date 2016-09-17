@@ -1,0 +1,42 @@
+
+body {
+
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+
+/* Header styling */
+#site-header .navbar {
+
+  border-radius: 0;
+  border: none;
+  margin: 0;
+
+}
+
+
+/* Main styling */
+#site-main {
+
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+
+
+/* Footer styling */
+#site-footer {
+
+  font-size: 12px;
+  text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background: #222;
+  color: #999;
+
+}
+

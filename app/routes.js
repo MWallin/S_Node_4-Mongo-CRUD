@@ -8,7 +8,8 @@
 const express = require( "express" )
 
 // Own
-const mainController = require( "./controllers/main.controllers")
+const mainController = require( "./controllers/main.controller" )
+const eventController = require( "./controllers/events.controller" )
 
 // Setup
 const router = express.Router()
@@ -22,6 +23,13 @@ const router = express.Router()
 // =============================================================================
 // Home route
 router.get( "/", mainController.showHome )
+
+
+// =============================================================================
+// Events
+router.get( "/events",        eventController.showEvents )
+
+router.get( "/events/:event", eventController.showEventDetails )
 
 
 
