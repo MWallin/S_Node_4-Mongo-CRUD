@@ -40,3 +40,8 @@ body {
 
 }
 
+
+/* Make sure delete button is inline */
+.delete-form {
+  display: inline;
+}

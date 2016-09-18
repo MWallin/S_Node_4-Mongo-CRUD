@@ -26,22 +26,27 @@ router.get( "/", mainController.showHome )
 
 
 // =============================================================================
-// Events
+// Events TODO: Move event routes to separate file
 
 // Seed events
-router.get( "/events/seed", eventController.seedEvents )
-
+router.get(     "/events/seed",         eventController.seedEvents )
 
 // Show all events
-router.get( "/events",        eventController.showEvents )
+router.get(     "/events",              eventController.showEvents )
+
+// Create event
+router.get(     "/events/create",       eventController.showCreate )
+router.post(    "/events/",             eventController.processCreate )
 
 // Show one event
-router.get( "/events/:event", eventController.showEventDetails )
+router.get(     "/events/:event",       eventController.showEventDetails )
 
-// TODO: Create event
-// TODO: Update event
-// TODO: Delete event
+// Update event TODO: Change .post to .put using method override
+router.get(     "/events/:event/edit",  eventController.showEdit )
+router.post(    "/events/:event",       eventController.processEdit )
 
+// Delete event
+router.delete(  "/events/:event",      eventController.deleteEvent )
 
 
 
