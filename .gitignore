@@ -4,5 +4,5 @@ node_modules/
 # Never include acutal typings
 typings
 
-# Dont include environmental variables
+# Never include environmental variables
 .env
